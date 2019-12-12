@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.1.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-js面试题" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/12/js%E9%9D%A2%E8%AF%95%E9%A2%98/" class="article-date">
+  <time datetime="2019-12-12T10:30:30.632Z" itemprop="datePublished">2019-12-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/12/js%E9%9D%A2%E8%AF%95%E9%A2%98/">js面试题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="js面试题"><a href="#js面试题" class="headerlink" title="js面试题"></a>js面试题</h2><h3 id="1-谈一谈深克隆和浅克隆？"><a href="#1-谈一谈深克隆和浅克隆？" class="headerlink" title="1.谈一谈深克隆和浅克隆？"></a>1.谈一谈深克隆和浅克隆？</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">浅克隆: 只是拷贝了基本类型的数据，而引用类型数据，复制后也是会发生引用，我们把这种拷贝叫做“（浅复制）浅拷贝”，换句话说，浅复制仅仅是指向被复制的内存地址，如果原地址中对象被改变了，那么浅复制出来的对象也会相应改变。</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">深克隆： 创建一个新对象，属性中引用的其他对象也会被克隆，不再指向原有对象地址。 JSON.parse、JSON.stringify()</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96; </span><br><span class="line">### 2.&#x3D;&#x3D;和&#x3D;&#x3D;&#x3D;区别是什么？</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;bath</span><br><span class="line">&#x3D;赋值</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x3D;&#x3D;返回一个布尔值；相等返回true，不相等返回false； 允许不同数据类型之间的比较； 如果是不同类型的数据进行，会默认进行数据类型之间的转换； 如果是对象数据类型的比较，比较的是空间地址</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x3D;&#x3D;&#x3D; 只要数据类型不一样，就返回false；</span><br></pre></td></tr></table></figure>
+<h3 id="3-常见的设计模式有哪些？"><a href="#3-常见的设计模式有哪些？" class="headerlink" title="3.常见的设计模式有哪些？"></a>3.常见的设计模式有哪些？</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1、js工厂模式</span><br><span class="line">2、js构造函数模式</span><br><span class="line">3、js原型模式</span><br><span class="line">4、构造函数+原型的js混合模式</span><br><span class="line">5、构造函数+原型的动态原型模式</span><br><span class="line">6、观察者模式</span><br><span class="line">7、发布订阅模式</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-call-bind-apply-的区别？"><a href="#4-call-bind-apply-的区别？" class="headerlink" title="4.call bind apply 的区别？"></a>4.call bind apply 的区别？</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">call() 和apply()的第一个参数相同，就是指定的对象。这个对象就是该函数的执行上下文。</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">call()和apply()的区别就在于，两者之间的参数。</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">call()在第一个参数之后的 后续所有参数就是传入该函数的值。</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apply() 只有两个参数，第一个是对象，第二个是数组，这个数组就是该函数的参数。 bind() 方法和前两者不同在于： bind() 方法会返回执行上下文被改变的函数而不会立即执行，而前两者是	直接执行该函数。他的参数和call()相同。</span><br></pre></td></tr></table></figure>
+<h3 id="5-js继承方式有哪些？"><a href="#5-js继承方式有哪些？" class="headerlink" title="5.js继承方式有哪些？"></a>5.js继承方式有哪些？</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">原型链继承 核心： 将父类的实例作为子类的原型</span><br><span class="line"></span><br><span class="line">构造继承 核心：使用父类的构造函数来增强子类实例，等于是复制父类的实例属性给子类</span><br><span class="line"></span><br><span class="line">实例继承 核心：为父类实例添加新特性，作为子类实例返回</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">拷贝继承</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">组合继承 核心：通过调用父类构造，继承父类的属性并保留传参的优点，然后通过将父类实例作为子类原型，实现	函数复用</span><br><span class="line"></span><br><span class="line">寄生组合继承 核心：通过寄生方式，砍掉父类的实例属性，这样，在调用两次父类的构造的时候，就不会初始化两次实 例方法&#x2F;属性，避免的组合继承的缺点</span><br></pre></td></tr></table></figure>
+<h3 id="6-ajax中get和post请求的区别"><a href="#6-ajax中get和post请求的区别" class="headerlink" title="6.ajax中get和post请求的区别"></a>6.ajax中get和post请求的区别</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">get 一般用于获取数据</span><br><span class="line">get请求如果需要传递参数，那么会默认将参数拼接到url的后面；然后发送给服务器；</span><br><span class="line">get请求传递参数大小是有限制的；是浏览器的地址栏有大小限制；</span><br><span class="line">get安全性较低</span><br><span class="line">get 一般会走缓存，为了防止走缓存，给url后面每次拼的参数不同；放在?后面，一般用个时间戳</span><br><span class="line">post 一般用于发送数据</span><br><span class="line">post传递参数，需要把参数放进请求体中，发送给服务器；</span><br><span class="line">post请求参数放进了请求体中，对大小没有要求；</span><br><span class="line">post安全性比较高；</span><br><span class="line">post请求不会走缓存；</span><br></pre></td></tr></table></figure>
+<h3 id="7-数组去重的方法"><a href="#7-数组去重的方法" class="headerlink" title="7.数组去重的方法"></a>7.数组去重的方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">function unique(arr)&#123;</span><br><span class="line">    var arr2 &#x3D; arr.sort();</span><br><span class="line">    var res &#x3D; [arr2[0]];</span><br><span class="line">    for(var i&#x3D;1;i&lt;arr2.length;i++)&#123;</span><br><span class="line">        if(arr2[i] !&#x3D;&#x3D; res[res.length-1])&#123;</span><br><span class="line">        res.push(arr2[i]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">return res;</span><br><span class="line">&#125;</span><br><span class="line">利用下标查询</span><br><span class="line"> function unique(arr)&#123;</span><br><span class="line">    var newArr &#x3D; [arr[0]];</span><br><span class="line">    for(var i&#x3D;1;i&lt;arr.length;i++)&#123;</span><br><span class="line">        if(newArr.indexOf(arr[i]) &#x3D;&#x3D; -1)&#123;</span><br><span class="line">        newArr.push(arr[i]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">return newArr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="8-原型链："><a href="#8-原型链：" class="headerlink" title="8.原型链："></a>8.原型链：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">原型链是由原型对象组成，每个对象都有 __proto__ 属性，指向了创建该对象的构造函数的原型，__proto__ 将对象连接起来组成了原型链。是一个用来实现继承和共享属性的有限的对象链。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">属性查找机制: 当查找对象的属性时，如果实例对象自身不存在该属性，则沿着原型链往上一级查找，找到时则输出，不存在时，则继续沿着原型链往上一级查找，直至最顶级的原型对象Object.prototype，如还是没找到，则输出undefined；</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">属性修改机制: 只会修改实例对象本身的属性，如果不存在，则进行添加该属性，如果需要修改原型的属性时，则可以用: b.prototype.x &#x3D; 2；但是这样会造成所有继承于该对象的实例的属性发生改变。</span><br></pre></td></tr></table></figure>
+
+<h3 id="9-闭包"><a href="#9-闭包" class="headerlink" title="9.闭包"></a>9.闭包</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">闭包属于一种特殊的作用域，称为 静态作用域。它的定义可以理解为: 父函数被销毁 的情况下，返回出的子函数的[[scope]]中仍然保留着父级的单变量对象和作用域链，因此可以继续访问到父级的变量对象，这样的函数称为闭包。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">闭包会产生一个很经典的问题:</span><br><span class="line"></span><br><span class="line">多个子函数的[[scope]]都是同时指向父级，是完全共享的。因此当父级的变量对象被修改时，所有子函数都受到影响。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">解决:</span><br><span class="line"></span><br><span class="line">变量可以通过 函数参数的形式 传入，避免使用默认的[[scope]]向上查找</span><br><span class="line">使用setTimeout包裹，通过第三个参数传入</span><br><span class="line">使用 块级作用域，让变量成为自己上下文的属性，避免共享</span><br></pre></td></tr></table></figure>
+
+<h3 id="10-对象的拷贝"><a href="#10-对象的拷贝" class="headerlink" title="10.对象的拷贝"></a>10.对象的拷贝</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">浅拷贝: 以赋值的形式拷贝引用对象，仍指向同一个地址，修改时原对象也会受到影响</span><br><span class="line"></span><br><span class="line">Object.assign</span><br><span class="line">展开运算符(...)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">深拷贝: 完全拷贝一个新对象，修改时原对象不再受到任何影响</span><br><span class="line"></span><br><span class="line">JSON.parse(JSON.stringify(obj)): 性能最快</span><br><span class="line"></span><br><span class="line">具有循环引用的对象时，报错</span><br><span class="line">当值为函数、undefined、或symbol时，无法拷贝</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">递归进行逐一赋值</span><br></pre></td></tr></table></figure>
+
+<h3 id="11-模块化"><a href="#11-模块化" class="headerlink" title="11.模块化"></a>11.模块化</h3><p>模块化开发在现代开发中已是必不可少的一部分，它大大提高了项目的可维护、可拓展和可协作性。通常，我们 在浏览器中使用 ES6 的模块化支持，在 Node 中使用 commonjs 的模块化支持。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">分类:</span><br><span class="line"></span><br><span class="line">es6: import &#x2F; export</span><br><span class="line">commonjs: require &#x2F; module.exports &#x2F; exports</span><br><span class="line">amd: require &#x2F; defined</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">require与import的区别</span><br><span class="line"></span><br><span class="line">require支持 动态导入，import不支持，正在提案 (babel 下可支持)</span><br><span class="line">require是 同步 导入，import属于 异步 导入</span><br><span class="line">require是 值拷贝，导出值变化不会影响导入值；import指向 内存地址，导入值会随导出值而变化</span><br></pre></td></tr></table></figure>
+
+<h3 id="12-防抖与节流"><a href="#12-防抖与节流" class="headerlink" title="12.防抖与节流"></a>12.防抖与节流</h3><p>防抖与节流函数是一种最常用的 高频触发优化方式，能对性能有较大的帮助。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">防抖 (debounce): 将多次高频操作优化为只在最后一次执行，通常使用的场景是：用户输入，只需再输入完成后做一次输入校验即可。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">function debounce(fn, wait, immediate) &#123;</span><br><span class="line">    let timer &#x3D; null</span><br><span class="line"></span><br><span class="line">    return function() &#123;</span><br><span class="line">        let args &#x3D; arguments</span><br><span class="line">        let context &#x3D; this</span><br><span class="line"></span><br><span class="line">        if (immediate &amp;&amp; !timer) &#123;</span><br><span class="line">            fn.apply(context, args)</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if (timer) clearTimeout(timer)</span><br><span class="line">        timer &#x3D; setTimeout(() &#x3D;&gt; &#123;</span><br><span class="line">            fn.apply(context, args)</span><br><span class="line">        &#125;, wait)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">节流(throttle): 每隔一段时间后执行一次，也就是降低频率，将高频操作优化成低频操作，通常使用场景: 滚动条事件 或者 resize 事件，通常每隔 100~500 ms执行一次即可。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">function throttle(fn, wait, immediate) &#123;</span><br><span class="line">    let timer &#x3D; null</span><br><span class="line">    let callNow &#x3D; immediate</span><br><span class="line">    </span><br><span class="line">    return function() &#123;</span><br><span class="line">        let context &#x3D; this,</span><br><span class="line">            args &#x3D; arguments</span><br><span class="line"></span><br><span class="line">        if (callNow) &#123;</span><br><span class="line">            fn.apply(context, args)</span><br><span class="line">            callNow &#x3D; false</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if (!timer) &#123;</span><br><span class="line">            timer &#x3D; setTimeout(() &#x3D;&gt; &#123;</span><br><span class="line">                fn.apply(context, args)</span><br><span class="line">                timer &#x3D; null</span><br><span class="line">            &#125;, wait)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="13-函数执行改变this"><a href="#13-函数执行改变this" class="headerlink" title="13.函数执行改变this"></a>13.函数执行改变this</h3><p>由于 JS 的设计原理: 在函数中，可以引用运行环境中的变量。因此就需要一个机制来让我们可以在函数体内部获取当前的运行环境，这便是this。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">因此要明白 this 指向，其实就是要搞清楚 函数的运行环境，说人话就是，谁调用了函数。例如:</span><br><span class="line"></span><br><span class="line">obj.fn()，便是 obj 调用了函数，既函数中的 this &#x3D;&#x3D;&#x3D; obj</span><br><span class="line">fn()，这里可以看成 window.fn()，因此 this &#x3D;&#x3D;&#x3D; window</span><br><span class="line"></span><br><span class="line">但这种机制并不完全能满足我们的业务需求，因此提供了三种方式可以手动修改 this 的指向:</span><br><span class="line"></span><br><span class="line">call: fn.call(target, 1, 2)</span><br><span class="line">apply: fn.apply(target, [1, 2])</span><br><span class="line">bind: fn.bind(target)(1,2)</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/12/12/js%E9%9D%A2%E8%AF%95%E9%A2%98/" data-id="ck42lzy9r00027srq3vtb79sa" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-css面试题" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/12/css%E9%9D%A2%E8%AF%95%E9%A2%98/" class="article-date">
+  <time datetime="2019-12-12T08:59:24.939Z" itemprop="datePublished">2019-12-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/12/css%E9%9D%A2%E8%AF%95%E9%A2%98/">css面试题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="css面试题"><a href="#css面试题" class="headerlink" title="css面试题"></a>css面试题</h2><h3 id="1-BFC"><a href="#1-BFC" class="headerlink" title="1.BFC"></a>1.BFC</h3><h5 id="触发条件"><a href="#触发条件" class="headerlink" title="触发条件:"></a>触发条件:</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">根元素</span><br><span class="line">position: absolute/fixed</span><br><span class="line">display: inline-block / table</span><br><span class="line"><span class="built_in">float</span> 元素</span><br><span class="line">ovevflow !== visible</span><br></pre></td></tr></table></figure>
+<p>规则:</p>
+<p>属于同一个 BFC 的两个相邻 Box 垂直排列<br>属于同一个 BFC 的两个相邻 Box 的 margin 会发生重叠<br>BFC 中子元素的 margin box 的左边， 与包含块 (BFC) border box的左边相接触 (子元素 absolute 除外)<br>BFC 的区域不会与 float 的元素区域重叠<br>计算 BFC 的高度时，浮动子元素也参与计算<br>文字层不会被浮动层覆盖，环绕于周围</p>
+<p>应用:</p>
+<p>阻止margin重叠<br>可以包含浮动元素 —— 清除内部浮动(清除浮动的原理是两个div都位于同一个 BFC 区域之中)<br>自适应两栏布局<br>可以阻止元素被浮动元素覆盖</p>
+<h3 id="2-link-与-import-的区别"><a href="#2-link-与-import-的区别" class="headerlink" title="2.link 与 @import 的区别"></a>2.link 与 @import 的区别</h3><p>link功能较多，可以定义 RSS，定义 Rel 等作用，而@import只能用于加载 css<br>当解析到link时，页面会同步加载所引的 css，而@import所引用的 css 会等到页面加载完才被加载<br>@import需要 IE5 以上才能使用<br>link可以使用 js 动态引入，@import不行</p>
+<h3 id="3-如何清除浮动？"><a href="#3-如何清除浮动？" class="headerlink" title="3.如何清除浮动？"></a>3.如何清除浮动？</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">clear清除浮动（添加空div法）在浮动元素下方添加空div,并给该元素写css样式 &#123;clear:both;height:0;overflow:hidden;&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">给浮动元素父级设置高度</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">父级同时浮动（需要给父级同级元素添加浮动）</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">父级设置成inline-block，其margin: 0 auto居中方式失效</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">给父级添加overflow:hidden 清除浮动方法</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">万能清除法 after伪类 清浮动（现在主流方法，推荐使用）</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">float_div:after&#123;</span><br><span class="line">content:&quot;.&quot;;</span><br><span class="line">clear:both;</span><br><span class="line">display:block;</span><br><span class="line">height:0;</span><br><span class="line">overflow:hidden;</span><br><span class="line">visibility:hidden;</span><br><span class="line">&#125;</span><br><span class="line">.float_div&#123;</span><br><span class="line">zoom:1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="4-css3实现三栏布局，左右固定，中间自适应"><a href="#4-css3实现三栏布局，左右固定，中间自适应" class="headerlink" title="4.css3实现三栏布局，左右固定，中间自适应"></a>4.css3实现三栏布局，左右固定，中间自适应</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"> &lt;style&gt;</span><br><span class="line">        * &#123;</span><br><span class="line">            margin: 0;</span><br><span class="line">            padding: 0;</span><br><span class="line">        &#125;</span><br><span class="line">        .middle,</span><br><span class="line">        .left,</span><br><span class="line">        .right &#123;</span><br><span class="line">            position: relative;</span><br><span class="line">            float: left;</span><br><span class="line">            min-height: 130px;</span><br><span class="line">        &#125;</span><br><span class="line">        .container &#123;</span><br><span class="line">            padding: 0 220px 0 200px;</span><br><span class="line">            overflow: hidden;</span><br><span class="line">        &#125;</span><br><span class="line">        .left &#123;</span><br><span class="line">            margin-left: -100%;</span><br><span class="line">            left: -200px;</span><br><span class="line">            width: 200px;</span><br><span class="line">            background: red;</span><br><span class="line">        &#125;</span><br><span class="line">        .right &#123;</span><br><span class="line">            margin-left: -220px;</span><br><span class="line">            right: -220px;</span><br><span class="line">            width: 220px;</span><br><span class="line">            background: green;</span><br><span class="line">        &#125;</span><br><span class="line">        .middle &#123;</span><br><span class="line">            width: 100%;</span><br><span class="line">            background: blue;</span><br><span class="line">            word-break: break-all;</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;&#x2F;style&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div class&#x3D;&#39;container&#39;&gt;</span><br><span class="line">        &lt;div class&#x3D;&#39;middle&#39;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">        &lt;div class&#x3D;&#39;left&#39;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">        &lt;div class&#x3D;&#39;right&#39;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-如何让一个div水平垂直居中"><a href="#5-如何让一个div水平垂直居中" class="headerlink" title="5.如何让一个div水平垂直居中"></a>5.如何让一个div水平垂直居中</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">div &#123;</span><br><span class="line">position: relative &#x2F; fixed; &#x2F;* 相对定位或绝对定位均可 *&#x2F;</span><br><span class="line">width:500px;</span><br><span class="line">height:300px;</span><br><span class="line">top: 50%;</span><br><span class="line">left: 50%;</span><br><span class="line">margin-top:-150px;</span><br><span class="line">margin-left:-250px;</span><br><span class="line"> 外边距为自身宽高的一半 *&#x2F;</span><br><span class="line">background-color: pink; &#x2F;* 方便看效果 *&#x2F;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">.container &#123;</span><br><span class="line">display: flex;</span><br><span class="line">align-items: center; &#x2F;* 垂直居中 *&#x2F;</span><br><span class="line">justify-content: center; &#x2F;* 水平居中 *&#x2F;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br><span class="line">.container div &#123;</span><br><span class="line">width: 100px; &#x2F;* 可省 *&#x2F;</span><br><span class="line">height: 100px; &#x2F;* 可省 *&#x2F;</span><br><span class="line">background-color: pink; &#x2F;* 方便看效果 *&#x2F;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="6-call和apply的作用是什么？区别是什么？"><a href="#6-call和apply的作用是什么？区别是什么？" class="headerlink" title="6.call和apply的作用是什么？区别是什么？"></a>6.call和apply的作用是什么？区别是什么？</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">call和apply的功能基本相同，都是实现继承或者转换对象指针的作用；</span><br><span class="line">唯一不通的是前者参数是罗列出来的，后者是存到数组中的；</span><br><span class="line">call或apply功能就是实现继承的；与面向对象的继承extends功能相似；但写法不同；</span><br><span class="line">语法：</span><br><span class="line">.call(对象[,参数1，参数2,....]);&#x2F;&#x2F;此地参数是指的是对象的参数，非方法的参数；</span><br><span class="line">.apply(对象,参数数组)&#x2F;&#x2F;参数数组的形式:[参数1，参数2,......]</span><br></pre></td></tr></table></figure>
+
+<h3 id="7-transition和animation的区别"><a href="#7-transition和animation的区别" class="headerlink" title="7.transition和animation的区别"></a>7.transition和animation的区别</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> Animation和transition大部分属性是相同的，他们都是随时间改变元素的属性值，他们的主要区别是transition需要触发一个事件才能改变属性，</span><br><span class="line">而animation不需要触发任何事件的情况下才会随时间改变属性值，并且transition为2帧，从from .... to，而animation可以一帧一帧的。</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">transition 规定动画的名字 规定完成过渡效果需要多少秒或毫秒 规定速度效果 定义过渡效果何时开始 animation 指定要绑定到选择器的关键帧的名称</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/12/12/css%E9%9D%A2%E8%AF%95%E9%A2%98/" data-id="ck42lzy9900017srq1e8j7qmv" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/12/hello-world/" class="article-date">
+  <time datetime="2019-12-12T08:55:17.425Z" itemprop="datePublished">2019-12-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/12/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/12/12/hello-world/" data-id="ck42lzy8900007srqdrsgfqv6" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/12/12/js%E9%9D%A2%E8%AF%95%E9%A2%98/">js面试题</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/12/css%E9%9D%A2%E8%AF%95%E9%A2%98/">css面试题</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/12/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
